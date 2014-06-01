@@ -106,3 +106,13 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+/**
+ * A random string used in security hashing methods.
+ */
+Configure::write('Security.salt', 'GePC4h7*!BPzOVtWP');
+
+/**
+ * A random numeric string (digits only) used to encrypt/decrypt strings.
+ */
+Configure::write('Security.cipherSeed', '35483179670314189530');
